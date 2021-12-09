@@ -43,7 +43,7 @@ public class UnidadeController {
 
 	}
 
-	@GetMapping("baiano/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Unidade> buscarPeloCodigo(@PathVariable Long id) {
 
 		Optional<Unidade> unidade = this.unidadeRepository.findById(id);
